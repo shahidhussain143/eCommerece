@@ -4,31 +4,27 @@
 <?php require_once 'header.php'; ?>
 </head>
 <body>
-	
 <nav>
-	<?php include_once 'nav.php';?>
+<?php include_once 'nav.php';?>
 </nav>
-		 
-	<div id="demo" class="carousel slide" data-ride="carousel">
-
-	<!-- Indicators -->
-	<ul class="carousel-indicators">
-		<li data-target="#demo" data-slide-to="0" class="active"></li>
-		<li data-target="#demo" data-slide-to="1"></li>
-		<li data-target="#demo" data-slide-to="2"></li>
-	</ul>
-	
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ul class="carousel-indicators">
+	<li data-target="#demo" data-slide-to="0" class="active"></li>
+	<li data-target="#demo" data-slide-to="1"></li>
+	<li data-target="#demo" data-slide-to="2"></li>
+</ul>
 	<!-- The slideshow -->
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="111.jpg" alt="iphone" width="100%" height="100%">
-		</div>
-		<div class="carousel-item">
-			<img src="s2.jpg" alt="tab" width="100%" height="100%">
-		</div>
-		<div class="carousel-item">
-			<img src="s3.jpg" alt="samsung" width="100%" height="100%">
-		</div>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="111.jpg" alt="iphone" width="100%" height="100%">
+	</div>
+	<div class="carousel-item">
+		<img src="s2.jpg" alt="tab" width="100%" height="100%">
+	</div>
+	<div class="carousel-item">
+		<img src="s3.jpg" alt="samsung" width="100%" height="100%">
+	</div>
 	</div>
 	
 	<!-- Left and right controls -->
@@ -75,7 +71,6 @@ for($proloop=0;$proloop<count($products);$proloop++){
       <a href="#" class="btn btn-primary"> <b><?php echo $products[$proloop]["click"]?></b></a>
     </div>
   </div>
-
 </div>
 <?php
     if($pro_counter==3 && $proloop<count($products)-1){
@@ -90,7 +85,5 @@ for($proloop=0;$proloop<count($products);$proloop++){
 <footer>
 	<?php include_once 'footer.php';?>
 </footer>
-
-
 </body>
 </html>
